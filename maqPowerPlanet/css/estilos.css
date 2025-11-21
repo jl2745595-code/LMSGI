@@ -23,16 +23,19 @@ header{
     justify-content: space-between;
 }
 header div#menu{
+    
     color: white;
     flex-basis: 5%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
 }
 header #menu i{
+    flex-direction: column-reverse;
     color: white;
-    font-size: 30px
+    font-size: 30px;
+
 
 }
 header figure{
@@ -70,7 +73,7 @@ header nav{
     align-items: center; /* alineacion en eje secundario */
 }
 header nav a{
-    display: none;
+    /* display: none; */
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -206,7 +209,7 @@ main section article div {
 }
 main section article div .dto{
     background-color: rgb(183,67,139);
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 2px;
     border-radius: 7px;
     font-size: 12px;
@@ -215,11 +218,12 @@ main section article div .dto{
 main section article div .precios{
     display: flex;
     flex-direction: column;
-    border: 0px solid black
-}
-main section article div .precion .pvr {
+    border: 0px solid black;
+    
     
 }
+ 
+
 main section article div .precios .pvp {
     font-size: 20px;
     font-weight: bold;
@@ -284,21 +288,36 @@ footer nav#sociales a i {
     color: white;
 }
 footer div#subscribete{
-    border: 1px solid black;
-    flex-basis: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    flex-basis:20%;
+    color: rgb(255, 234, 8);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
+footer div#input {
+    display: flex;
+    margin-left: 10px;
+}
+
 footer article {
+    /* box-sizing: border-box; */
+    background-color: rgb(28, 28, 28);
     border: 1px solid black;
     flex-basis: 33%;
     padding-top: 20px;
+    border-radius: 12%;
+
 }
 footer article h3 {
+    margin-top:4%;
     color: whitesmoke;
-    text-transform: uppercase;
-    margin-left: 15px;
+    /* text-transform: uppercase; */
+    margin-left: 25px;
     margin-bottom: 20px;
 }
 footer article nav{
+  
     display: flex;
     flex-direction: column;
     margin-left: 25px;
@@ -307,7 +326,7 @@ footer article nav a{
     display: flex;
     flex-direction: row;
     justify-content: start;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-bottom: 10px;
     height: 30px;
     align-items: center;
